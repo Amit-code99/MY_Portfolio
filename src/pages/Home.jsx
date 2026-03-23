@@ -68,12 +68,11 @@ const Home = () => {
             <div className="flex flex-col justify-center">
               <h3 className="text-3xl font-bold text-[#21243D] mb-4">Designing Dashboards</h3>
               <div className="flex items-center space-x-4 mb-4">
-                <span className="bg-[#142850] text-white font-black text-sm px-3 py-1 rounded-full">2020</span>
+                <span className="bg-[#142850] text-white font-black text-sm px-3 py-1 rounded-full">2025</span>
                 <span className="text-[#8695A4] text-xl">Dashboard</span>
               </div>
               <p className="text-[#21243D]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                Built RESTful APIs using Node.js and Express to handle core functionalities such as product management, order tracking, user control, and inventory updates. Designed secure authentication and role-based access for admins and vendors.
               </p>
             </div>
           </div>
@@ -82,7 +81,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row pb-8 border-b border-gray-200">
             <img src={work2} alt="Illustration" className="w-full md:w-[246px] h-auto md:h-[180px] object-cover rounded-md mb-4 md:mb-0 md:mr-6" />
             <div className="flex flex-col justify-center">
-              <h3 className="text-3xl font-bold text-[#21243D] mb-4">Vibrant Portraits of 2020</h3>
+              <h3 className="text-3xl font-bold text-[#21243D] mb-4">Vibrant Portraits of 2025</h3>
               <div className="flex items-center space-x-4 mb-4">
                 <span className="bg-[#142850] text-white font-black text-sm px-3 py-1 rounded-full">2018</span>
                 <span className="text-[#8695A4] text-xl">Illustration</span>
