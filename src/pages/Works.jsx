@@ -1,42 +1,25 @@
 import { Link } from 'react-router-dom';
-import work1 from '../assets/work_dashboard.png';
-import work2 from '../assets/work_portrait.png';
-import work3 from '../assets/work_typography.png';
+import work2 from '../assets/ecommerce_dashboard.png';
+import work3 from '../assets/broker_community.png';
 import work4 from '../assets/work_components.png';
 
 const Works = () => {
   const worksItems = [
     {
-      id: 'dashboards',
-      title: 'Designing Dashboards',
-      year: '2020',
-      category: 'Dashboard',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-      image: work1
-    },
-    {
-      id: 'portraits',
-      title: 'Vibrant Portraits of 2020',
-      year: '2018',
-      category: 'Illustration',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      id: 'ecommerce',
+      title: 'Multi-Vendor E-Commerce Platform',
+      year: '2026',
+      category: 'Full Stack Development',
+      description: 'Built RESTful APIs using Node.js and Express, handling core functionalities such as user authentication, product catalog management, cart operations, and order lifecycle. Integrated vendor-specific dashboards, enabling sellers to manage inventory, pricing, and orders efficiently.',
       image: work2
     },
     {
-      id: 'malayalam',
-      title: '36 Days of Malayalam type',
-      year: '2018',
-      category: 'Typography',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      id: 'broker',
+      title: 'Broker Community Platform',
+      year: '2026',
+      category: 'Backend Development',
+      description: 'Built scalable backend services using Node.js and Express, enabling secure user authentication, role-based access (brokers, admins), and real-time interaction capabilities. Implemented features like property listings, lead management, and broker-to-broker collaboration to improve networking and deal flow.',
       image: work3
-    },
-    {
-      id: 'components',
-      title: 'Components',
-      year: '2018',
-      category: 'Components, Design',
-      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-      image: work4
     }
   ];
 

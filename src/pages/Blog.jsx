@@ -3,28 +3,28 @@ import React from 'react';
 const Blog = () => {
   const posts = [
     {
-      title: "UI Interactions of the week",
-      date: "12 Feb 2019",
-      categories: "Express, Handlebars",
-      description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      title: "Mastering Microservices Architecture with Node.js",
+      date: "15 Jan 2026",
+      categories: "Backend, Node.js",
+      description: "An in-depth look at building scalable and resilient microservices using Node.js and Express. We discuss message brokers, database per service patterns, and service discovery."
     },
     {
-      title: "UI Interactions of the week",
-      date: "12 Feb 2019",
-      categories: "Express, Handlebars",
-      description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      title: "Optimizing React Performance for Large-Scale Applications",
+      date: "22 Feb 2026",
+      categories: "Frontend, React",
+      description: "Strategies for improving the performance of complex React applications. Covering memoization, code-splitting, and efficient state management to ensure a smooth user experience."
     },
     {
-      title: "UI Interactions of the week",
-      date: "12 Feb 2019",
-      categories: "Express, Handlebars",
-      description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      title: "Serverless Computing: A Deep Dive into Azure Functions",
+      date: "10 Mar 2026",
+      categories: "Cloud, Azure",
+      description: "Exploring the benefits and challenges of serverless architecture using Azure Functions. Learn how to build event-driven systems that scale automatically and reduce operational overhead."
     },
     {
-      title: "UI Interactions of the week",
-      date: "12 Feb 2019",
-      categories: "Express, Handlebars",
-      description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      title: "Implementing Secure Authentication with JWT and OAuth2",
+      date: "02 Apr 2026",
+      categories: "Security, Web Dev",
+      description: "Best practices for implementing robust authentication and authorization in modern web applications. Understanding the flow of JWT and integrating OAuth2 for third-party logins."
     }
   ];
 
