@@ -1,118 +1,116 @@
 import { Link } from 'react-router-dom';
+import { Facebook, Twitter, Linkedin, Instagram, Play } from 'lucide-react';
 import avatar from '../assets/avatar.png';
-import work1 from '../assets/work_dashboard.png';
 import work2 from '../assets/ecommerce_dashboard.png';
 import work3 from '../assets/broker_community.png';
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-white font-sans text-gray-800">
+      
       {/* Hero Section */}
-      <section className="px-4 md:px-8 pt-8 md:pt-24 pb-16 max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-        <div className="md:w-2/3 md:pr-10 text-center md:text-left mt-10 md:mt-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#21243D] leading-tight mb-6">
-            Hi, I am Amit Yadav,<br className="hidden md:block" />
-            Software Developer
-          </h1>
-          <p className="text-gray-600 mb-8 text-lg">
-            Software Developer with strong expertise in Node.js, Python, and modern frontend technologies including React.js, Tailwind CSS, and JavaScript. MCA graduate with a solid foundation in building scalable, responsive, and user-centric web applications. Experienced with Azure and Adobe Target, with a focus on delivering efficient and high-performance solutions.
-          </p>
-          <a 
-            href="/Amit_Yadav_Resume.pdf" 
-            download="Amit_Yadav_Resume.pdf"
-            className="inline-block bg-[#FF6464] hover:bg-[#ff4f4f] transition-colors text-white font-medium py-3 px-8 rounded cursor-pointer"
-          >
-            Download Resume
-          </a>
-        </div>
-        <div className="md:w-1/3 flex justify-center md:justify-end">
-          <img
-            src={avatar}
-            alt="Amit's Profile"
-            className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-[0_5px_0px_5px_rgba(237,247,250,1)]"
-          />
-        </div>
-      </section>
-
-      {/* Recent Posts Section */}
-      <section className="bg-[#EDF7FA] py-8 pb-16">
-        <div className="px-4 md:px-8 max-w-5xl mx-auto">
-          <div className="flex justify-center md:justify-between items-center mb-6">
-            <h2 className="text-[22px] text-[#21243D]">Recent posts</h2>
-            <Link to="/blog" className="hidden md:block text-[#00A8CC] hover:underline">View all</Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {[1, 2].map((item) => (
-              <div key={item} className="bg-white p-6 rounded-md shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-[26px] font-bold text-[#21243D] leading-tight mb-4">
-                  {item === 1 ? "Mastering Microservices Architecture with Node.js" : "Optimizing React Performance for Large-Scale Applications"}
-                </h3>
-                <div className="text-[#21243D] mb-4 text-lg flex items-center space-x-4">
-                  <span>{item === 1 ? "15 Jan 2026" : "22 Feb 2026"}</span>
-                  <span className="text-gray-400">|</span>
-                  <span>{item === 1 ? "Backend, Node.js" : "Frontend, React"}</span>
-                </div>
-                <p className="text-gray-600">
-                  {item === 1 ? "An in-depth look at building scalable and resilient microservices using Node.js and Express. We discuss message brokers, database per service patterns, and service discovery." : "Strategies for improving the performance of complex React applications. Covering memoization, code-splitting, and efficient state management to ensure a smooth user experience."}
-                </p>
+      <section className="bg-[#2A3131] relative overflow-hidden rounded-bl-[150px] md:rounded-bl-[350px] min-h-[100vh] flex items-center md:items-end md:pb-0 pb-20">
+        <div className="w-full max-w-[1400px] mx-auto px-6 md:px-24 flex flex-col md:flex-row items-center justify-between relative h-full pt-36 md:pt-40">
+          
+          {/* Left Text */}
+          <div className="md:w-[50%] z-20 flex flex-col items-start mt-4 md:mt-[-80px]">
+            <p className="text-white text-[20px] md:text-[22px] mb-1 font-normal tracking-wide">Hello I am</p>
+            <p className="text-white text-[20px] md:text-[22px] mb-4 font-normal tracking-wide">Amit Yadav</p>
+            
+            <h1 className="text-white text-[56px] md:text-[85px] font-bold leading-[1.05] mb-16 tracking-tight">
+              Software <br/> Developer
+            </h1>
+            
+            {/* Play Button */}
+            <div className="w-[85px] h-[85px] flex justify-center items-center relative cursor-pointer group mt-2 md:ml-12">
+              <div className="absolute inset-0 rounded-full border-[6px] border-[#ecc655] shadow-[0_0_15px_rgba(236,198,85,0.4)] transition-transform group-hover:scale-105"></div>
+              <div className="w-[45px] h-[45px] bg-white rounded-full flex items-center justify-center pl-1 z-10 transition-transform group-hover:scale-110 shadow-sm">
+                <Play className="fill-[#ecc655] text-[#ecc655]" size={20} />
               </div>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="md:w-[50%] flex justify-center md:justify-end items-end h-[60vh] md:h-auto absolute bottom-0 right-0 md:relative z-10 opacity-70 md:opacity-100 overflow-hidden md:overflow-visible pointer-events-none mt-20 md:mt-0">
+            <img 
+              src={avatar} 
+              alt="Amit Yadav" 
+              className="w-auto h-full max-h-[85vh] object-contain object-bottom drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)]"
+            />
+          </div>
+
+          {/* Social Sidebar */}
+          <div className="hidden md:flex flex-col space-y-[8px] absolute right-8 top-1/2 -translate-y-1/2 z-30">
+            {[
+               { id: 'fb', icon: <Facebook size={18} fill="currentColor" stroke="none" /> },
+               { id: 'tw', icon: <Twitter size={18} fill="currentColor" stroke="none" /> },
+               { id: 'in', icon: <Linkedin size={18} fill="currentColor" stroke="none" /> },
+               { id: 'ig', icon: <Instagram size={18} /> }
+            ].map(social => (
+               <div key={social.id} className="w-[42px] h-[42px] bg-[#9ba5a5] hover:bg-[#ecc655] transition-colors duration-300 rounded-[5px] flex items-center justify-center cursor-pointer group shadow-sm">
+                 <div className="text-[#2A3131]">{social.icon}</div>
+               </div>
             ))}
           </div>
+
         </div>
       </section>
 
       {/* Featured Works Section */}
-      <section className="px-4 md:px-8 py-16 max-w-5xl mx-auto">
-        <h2 className="text-[22px] text-[#21243D] mb-8 text-center md:text-left">Featured works</h2>
+      <section className="px-6 md:px-24 py-28 bg-white max-w-[1400px] mx-auto">
+        <div className="mb-20">
+          <h2 className="text-[15px] uppercase tracking-[0.3em] text-gray-500 font-bold mb-4">Latest Works</h2>
+          <h3 className="text-4xl md:text-6xl font-bold text-[#2A3131] leading-[1.1] tracking-tight">Project <br /> Collections</h3>
+        </div>
 
-        <div className="space-y-8">
-          {/* Work Item 1 */}
-          <div className="flex flex-col md:flex-row pb-8 border-b border-gray-200">
-            <img src={work2} alt="Multi-Vendor E-Commerce Platform" className="w-full md:w-[246px] h-auto md:h-[180px] object-cover rounded-md mb-4 md:mb-0 md:mr-6" />
-            <div className="flex flex-col justify-center">
-              <h3 className="text-3xl font-bold text-[#21243D] mb-4">Multi-Vendor E-Commerce Platform</h3>
-              <div className="flex items-center space-x-4 mb-4">
-                <span className="bg-[#142850] text-white font-black text-sm px-3 py-1 rounded-full">2026</span>
-                <span className="text-[#8695A4] text-xl">Full Stack Development</span>
-              </div>
-              <p className="text-[#21243D]">
-                Built RESTful APIs using Node.js and Express, handling core functionalities such as user authentication, product catalog management, cart operations, and order lifecycle. Integrated vendor-specific dashboards, enabling sellers to manage inventory, pricing, and orders efficiently.
-              </p>
-            </div>
-          </div>
-
-          {/* Work Item 2 */}
-          <div className="flex flex-col md:flex-row pb-8 border-b border-gray-200">
-            <img src={work3} alt="Broker Community Platform" className="w-full md:w-[246px] h-auto md:h-[180px] object-cover rounded-md mb-4 md:mb-0 md:mr-6" />
-            <div className="flex flex-col justify-center">
-              <h3 className="text-3xl font-bold text-[#21243D] mb-4">Broker Community Platform</h3>
-              <div className="flex items-center space-x-4 mb-4">
-                <span className="bg-[#142850] text-white font-black text-sm px-3 py-1 rounded-full">2026</span>
-                <span className="text-[#8695A4] text-xl">Backend Development</span>
-              </div>
-              <p className="text-[#21243D]">
-                Built scalable backend services using Node.js and Express, enabling secure user authentication, role-based access (brokers, admins), and real-time interaction capabilities. Implemented features like property listings, lead management, and broker-to-broker collaboration to improve networking and deal flow.
-              </p>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+          <ProjectBox
+            title="Multi-Vendor E-Commerce Platform"
+            category="Full Stack Development"
+            image={work2}
+            id="ecommerce"
+          />
+          <ProjectBox
+            title="Broker Community Platform"
+            category="Backend Development"
+            image={work3}
+            id="broker"
+          />
+        </div>
+        
+        <div className="mt-16 flex justify-center md:justify-start">
+           <Link to="/works" className="px-10 py-5 bg-[#2A3131] text-white font-bold text-[13px] uppercase tracking-[0.2em] hover:bg-[#ecc655] hover:text-[#2A3131] transition-colors rounded-sm">View All Works</Link>
         </div>
       </section>
 
-      {/* Contact CTA Section */}
-      <section className="px-4 md:px-8 py-16 text-center bg-[#EDF7FA]">
-        <h2 className="text-3xl font-bold text-[#21243D] mb-4">Want to work together?</h2>
-        <p className="text-gray-600 mb-8 max-w-2xl mx-auto text-lg">
-          I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
-        </p>
-        <Link 
-          to="/contact" 
-          className="inline-block bg-[#FF6464] hover:bg-[#ff4f4f] transition-colors text-white font-medium py-3 px-10 rounded-md text-lg"
-        >
-          Get In Touch
-        </Link>
+      {/* CTA Section */}
+      <section className="bg-[#ecc655] py-28 relative overflow-hidden">
+        <div className="px-6 md:px-24 text-center md:text-left flex flex-col md:flex-row items-center justify-between max-w-[1400px] mx-auto relative z-10">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#2A3131] leading-[1.1] tracking-tight mb-10 md:mb-0">
+            Ready to Build <br /> Your Next Vision?
+          </h2>
+          <Link 
+            to="/contact" 
+            className="px-10 py-5 bg-[#2A3131] text-white font-bold text-[13px] uppercase tracking-[0.2em] hover:-translate-y-1 transition-transform rounded-sm shadow-xl"
+          >
+            Contact Me Now
+          </Link>
+        </div>
       </section>
     </div>
   );
 };
+
+const ProjectBox = ({ title, category, image, id }) => (
+  <Link to={`/works/${id}`} className="group block">
+    <div className="w-full aspect-[4/3] overflow-hidden rounded-md mb-8 shadow-md">
+        <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+    </div>
+    <div>
+        <span className="text-[#ecc655] text-[13px] font-bold uppercase tracking-[0.2em] mb-4 block">{category}</span>
+        <h4 className="text-3xl md:text-[32px] font-bold text-[#2A3131] leading-tight group-hover:text-[#ecc655] transition-colors">{title}</h4>
+    </div>
+  </Link>
+);
 
 export default Home;
