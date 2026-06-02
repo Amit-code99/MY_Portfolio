@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Works from './pages/Works';
@@ -22,7 +21,6 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </Router>
   );
