@@ -93,8 +93,8 @@ const ContactModal = ({ isOpen, onClose }) => {
         {/* Success State */}
         {status === 'success' && (
           <div className="flex flex-col items-center justify-center py-12 text-center">
-            <div className="w-16 h-16 bg-[#00FF66]/10 border border-[#00FF66]/30 rounded-full flex items-center justify-center mb-6">
-              <CheckCircle size={32} className="text-[#00FF66]" />
+            <div className="w-16 h-16 bg-[#34d399]/10 border border-[#34d399]/30 rounded-full flex items-center justify-center mb-6">
+              <CheckCircle size={32} className="text-[#34d399]" />
             </div>
             <h3 className="text-[24px] font-bold text-white mb-3">Request Sent!</h3>
             <p className="text-white/60 text-[13px] max-w-[280px] mb-8">
@@ -147,7 +147,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                 CONTACT
               </span>
               <h2 className="text-[28px] md:text-[34px] font-bold tracking-tight leading-[1] mb-2 text-white">
-                Start a <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#00FF66]">project.</span>
+                Start a <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399]">project.</span>
               </h2>
               <p className="text-white/60 text-[12px]">
                 Tell us briefly about your project — I'll reply within 24 hours.
@@ -160,30 +160,30 @@ const ContactModal = ({ isOpen, onClose }) => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex-1 flex flex-col">
                   <label className="font-mono text-[8px] tracking-[0.1em] text-white/50 uppercase mb-1.5 flex items-center">
-                    FIRST NAME <span className="text-[#00FF66] ml-1">*</span>
+                    FIRST NAME <span className="text-[#34d399] ml-1">*</span>
                   </label>
-                  <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="Your name" className="bg-[#151515] border border-white/5 focus:border-[#00FF66] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
+                  <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="Your name" className="bg-[#151515] border border-white/5 focus:border-[#34d399] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
                 </div>
                 <div className="flex-1 flex flex-col">
                   <label className="font-mono text-[8px] tracking-[0.1em] text-white/50 uppercase mb-1.5 flex items-center">
-                    LAST NAME <span className="text-[#00FF66] ml-1">*</span>
+                    LAST NAME <span className="text-[#34d399] ml-1">*</span>
                   </label>
-                  <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last name" className="bg-[#151515] border border-white/5 focus:border-[#00FF66] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
+                  <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last name" className="bg-[#151515] border border-white/5 focus:border-[#34d399] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
                 </div>
               </div>
 
               <div className="flex flex-col">
                 <label className="font-mono text-[8px] tracking-[0.1em] text-white/50 uppercase mb-1.5 flex items-center">
-                  EMAIL <span className="text-[#00FF66] ml-1">*</span>
+                  EMAIL <span className="text-[#34d399] ml-1">*</span>
                 </label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="you@company.com" className="bg-[#151515] border border-white/5 focus:border-[#00FF66] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
+                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="you@company.com" className="bg-[#151515] border border-white/5 focus:border-[#34d399] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
               </div>
 
               <div className="flex flex-col">
                 <label className="font-mono text-[8px] tracking-[0.1em] text-white/50 uppercase mb-1.5 flex items-center">
-                  PHONE NUMBER <span className="text-[#00FF66] ml-1">*</span>
+                  PHONE NUMBER <span className="text-[#34d399] ml-1">*</span>
                 </label>
-                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="+91 1234567890" className="bg-[#151515] border border-white/5 focus:border-[#00FF66] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
+                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="+91 1234567890" className="bg-[#151515] border border-white/5 focus:border-[#34d399] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" required disabled={status === 'loading'} />
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -191,13 +191,13 @@ const ContactModal = ({ isOpen, onClose }) => {
                   <label className="font-mono text-[8px] tracking-[0.1em] text-white/50 uppercase mb-1.5 flex items-center space-x-1">
                     <span>COMPANY NAME</span> <span className="text-white/30">— optional</span>
                   </label>
-                  <input type="text" name="company" value={formData.company} onChange={handleChange} placeholder="Your Company" className="bg-[#151515] border border-white/5 focus:border-[#00FF66] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" disabled={status === 'loading'} />
+                  <input type="text" name="company" value={formData.company} onChange={handleChange} placeholder="Your Company" className="bg-[#151515] border border-white/5 focus:border-[#34d399] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" disabled={status === 'loading'} />
                 </div>
                 <div className="flex-1 flex flex-col">
                   <label className="font-mono text-[8px] tracking-[0.1em] text-white/50 uppercase mb-1.5 flex items-center space-x-1">
                     <span>CURRENT WEBSITE</span> <span className="text-white/30">— optional</span>
                   </label>
-                  <input type="url" name="website" value={formData.website} onChange={handleChange} placeholder="https://your-domain.com" className="bg-[#151515] border border-white/5 focus:border-[#00FF66] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" disabled={status === 'loading'} />
+                  <input type="url" name="website" value={formData.website} onChange={handleChange} placeholder="https://your-domain.com" className="bg-[#151515] border border-white/5 focus:border-[#34d399] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full" disabled={status === 'loading'} />
                 </div>
               </div>
 
@@ -205,19 +205,19 @@ const ContactModal = ({ isOpen, onClose }) => {
                 <label className="font-mono text-[8px] tracking-[0.1em] text-white/50 uppercase mb-1.5 flex items-center space-x-1">
                   <span>MESSAGE</span> <span className="text-white/30">— optional</span>
                 </label>
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Idea, industry, timeline — what I should know." rows="3" className="bg-[#151515] border border-white/5 focus:border-[#00FF66] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full resize-none" disabled={status === 'loading'}></textarea>
+                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Idea, industry, timeline — what I should know." rows="3" className="bg-[#151515] border border-white/5 focus:border-[#34d399] rounded-sm px-3 py-2 text-white text-[12px] outline-none transition-colors w-full resize-none" disabled={status === 'loading'}></textarea>
               </div>
 
               {/* Privacy Consent Checkbox */}
               <div className="flex items-start space-x-3 pt-1">
                 <div className="relative flex items-center justify-center mt-1">
-                  <input type="checkbox" id="modal-privacy" name="privacy" checked={formData.privacy} onChange={handleChange} className="peer appearance-none w-3.5 h-3.5 border border-white/20 bg-[#151515] rounded-sm checked:bg-[#00FF66] checked:border-[#00FF66] cursor-pointer transition-colors" required disabled={status === 'loading'} />
+                  <input type="checkbox" id="modal-privacy" name="privacy" checked={formData.privacy} onChange={handleChange} className="peer appearance-none w-3.5 h-3.5 border border-white/20 bg-[#151515] rounded-sm checked:bg-[#34d399] checked:border-[#34d399] cursor-pointer transition-colors" required disabled={status === 'loading'} />
                   <svg className="absolute w-2.5 h-2.5 text-[#090a0a] opacity-0 peer-checked:opacity-100 pointer-events-none" viewBox="0 0 14 10" fill="none">
                     <path d="M1 5L4.5 8.5L13 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <label htmlFor="modal-privacy" className="text-[11px] text-white/60 cursor-pointer select-none leading-tight">
-                  I consent to the processing of my data according to the <a href="#" className="text-white hover:text-[#00FF66] transition-colors underline decoration-white/20 underline-offset-4">privacy policy</a>.
+                  I consent to the processing of my data according to the <a href="#" className="text-white hover:text-[#34d399] transition-colors underline decoration-white/20 underline-offset-4">privacy policy</a>.
                 </label>
               </div>
 
@@ -227,7 +227,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                 disabled={status === 'loading'}
                 className="w-full mt-2 bg-[#1a1b1b] hover:bg-[#202222] transition-all duration-300 hover:scale-[1.02] border border-white/5 rounded-sm py-3 flex items-center justify-center group overflow-hidden relative disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#00FF66] shadow-[0_0_12px_rgba(0,255,102,0.8)]"></div>
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#34d399] shadow-[0_0_12px_rgba(52,211,153,0.8)]"></div>
                 {status === 'loading' ? (
                   <span className="flex items-center text-[12px] font-medium text-white tracking-wide">
                     <Loader2 size={14} className="animate-spin mr-2" />

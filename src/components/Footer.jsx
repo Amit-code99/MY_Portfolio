@@ -50,12 +50,12 @@ const Footer = () => {
             <h4 className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase mb-6">CONTACT</h4>
             <ul className="flex flex-col space-y-4 text-[13px]">
               <li>
-                <a href="mailto:amityadav63999@gmail.com" className="text-[#00FF66] hover:text-[#33ff85] transition-colors font-medium">
+                <a href="mailto:amityadav63999@gmail.com" className="text-[#34d399] hover:text-[#6ee7b7] transition-colors font-medium">
                   amityadav63999@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+918948869211" className="text-white/80 hover:text-[#00FF66] transition-colors">
+                <a href="tel:+918948869211" className="text-white/80 hover:text-[#34d399] transition-colors">
                   +91 8948869211
                 </a>
               </li>
@@ -64,7 +64,7 @@ const Footer = () => {
                   href="https://wa.me/918948869211?text=Hi%20Amit%2C%20I%27d%20like%20to%20discuss%20a%20project" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-white/80 hover:text-[#00FF66] transition-colors flex items-center group"
+                  className="text-white/80 hover:text-[#34d399] transition-colors flex items-center group"
                 >
                   WhatsApp <ArrowRight size={12} className="ml-1 opacity-50 group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all transform -rotate-45" />
                 </a>
@@ -85,10 +85,10 @@ const Footer = () => {
           <div className="col-span-1 flex flex-col">
             <h4 className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase mb-6">SITEMAP</h4>
             <ul className="flex flex-col space-y-4 text-[13px] text-white">
-              <li><Link to="/" className="hover:text-[#00FF66] transition-colors">Home</Link></li>
-              <li><Link to="/works" className="hover:text-[#00FF66] transition-colors">Portfolio</Link></li>
-              <li><Link to="/blog" className="hover:text-[#00FF66] transition-colors">Blog</Link></li>
-              <li><Link to="/contact" className="hover:text-[#00FF66] transition-colors">Contact</Link></li>
+              <li><Link to="/" className="hover:text-[#34d399] transition-colors">Home</Link></li>
+              <li><Link to="/works" className="hover:text-[#34d399] transition-colors">Portfolio</Link></li>
+              <li><Link to="/blog" className="hover:text-[#34d399] transition-colors">Blog</Link></li>
+              <li><Link to="/contact" className="hover:text-[#34d399] transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -97,17 +97,17 @@ const Footer = () => {
             <h4 className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase mb-6">SOCIAL</h4>
             <ul className="flex flex-col space-y-4 text-[13px] text-white/80">
               <li>
-                <a href="https://github.com/Amit-code99" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FF66] transition-colors group flex items-center">
+                <a href="https://github.com/Amit-code99" target="_blank" rel="noopener noreferrer" className="hover:text-[#34d399] transition-colors group flex items-center">
                   GitHub <ArrowRight size={12} className="ml-1 opacity-50 group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all transform -rotate-45" />
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FF66] transition-colors group flex items-center">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#34d399] transition-colors group flex items-center">
                   LinkedIn <ArrowRight size={12} className="ml-1 opacity-50 group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all transform -rotate-45" />
                 </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/@akyofficial9341" target="_blank" rel="noopener noreferrer" className="hover:text-[#00FF66] transition-colors group flex items-center">
+                <a href="https://www.youtube.com/@akyofficial9341" target="_blank" rel="noopener noreferrer" className="hover:text-[#34d399] transition-colors group flex items-center">
                   YouTube <ArrowRight size={12} className="ml-1 opacity-50 group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all transform -rotate-45" />
                 </a>
               </li>

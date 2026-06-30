@@ -19,8 +19,8 @@ const FloatingButtons = ({ onChatClick }) => {
         href="tel:+918948869211"
         className="w-[44px] h-[44px] bg-[#151515] hover:bg-[#252525] border border-white/5 transition-all duration-300 hover:scale-110 rounded-sm flex items-center justify-center group relative overflow-hidden shadow-lg"
       >
-        <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-transparent group-hover:bg-[#00FF66] transition-colors shadow-[0_0_8px_rgba(0,255,102,0.8)]"></div>
-        <Phone size={18} strokeWidth={1.5} className="text-white/70 group-hover:text-[#00FF66] transition-colors" />
+        <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-transparent group-hover:bg-[#34d399] transition-colors shadow-[0_0_8px_rgba(52,211,153,0.8)]"></div>
+        <Phone size={18} strokeWidth={1.5} className="text-white/70 group-hover:text-[#34d399] transition-colors" />
       </a>
 
       {/* Chat / Contact */}
@@ -28,8 +28,8 @@ const FloatingButtons = ({ onChatClick }) => {
         onClick={onChatClick}
         className="w-[44px] h-[44px] bg-[#151515] hover:bg-[#252525] border border-white/5 transition-all duration-300 hover:scale-110 rounded-sm flex items-center justify-center group relative overflow-hidden shadow-lg"
       >
-        <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-transparent group-hover:bg-[#00FF66] transition-colors shadow-[0_0_8px_rgba(0,255,102,0.8)]"></div>
-        <MessageSquare size={18} strokeWidth={1.5} className="text-white/70 group-hover:text-[#00FF66] transition-colors" />
+        <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-transparent group-hover:bg-[#34d399] transition-colors shadow-[0_0_8px_rgba(52,211,153,0.8)]"></div>
+        <MessageSquare size={18} strokeWidth={1.5} className="text-white/70 group-hover:text-[#34d399] transition-colors" />
       </button>
     </div>
   );

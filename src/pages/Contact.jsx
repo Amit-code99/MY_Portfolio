@@ -64,7 +64,7 @@ const Contact = () => {
             </span>
           </div>
           <h1 className="text-[46px] md:text-[60px] font-bold tracking-tight leading-[1] mb-4">
-            Get in <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#00FF66]">touch.</span>
+            Get in <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399]">touch.</span>
           </h1>
           <p className="text-white/60 text-[15px] max-w-[500px] leading-relaxed">
             Have a project in mind? Send me a message and I'll get back to you within 24 hours.
@@ -77,13 +77,13 @@ const Contact = () => {
           <div className="lg:col-span-2 space-y-8">
             <div>
               <h3 className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase mb-4">Email</h3>
-              <a href="mailto:amityadav63999@gmail.com" className="text-[18px] font-bold hover:text-[#00FF66] transition-colors">
+              <a href="mailto:amityadav63999@gmail.com" className="text-[18px] font-bold hover:text-[#34d399] transition-colors">
                 amityadav63999@gmail.com
               </a>
             </div>
             <div>
               <h3 className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase mb-4">Phone</h3>
-              <a href="tel:+918948869211" className="text-[18px] font-bold hover:text-[#00FF66] transition-colors">
+              <a href="tel:+918948869211" className="text-[18px] font-bold hover:text-[#34d399] transition-colors">
                 +91 8948869211
               </a>
             </div>
@@ -113,7 +113,7 @@ const Contact = () => {
             {/* GitHub */}
             <div className="pt-2">
               <h3 className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase mb-4">GitHub</h3>
-              <a href="https://github.com/Amit-code99" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium hover:text-[#00FF66] transition-colors flex items-center">
+              <a href="https://github.com/Amit-code99" target="_blank" rel="noopener noreferrer" className="text-[16px] font-medium hover:text-[#34d399] transition-colors flex items-center">
                 github.com/Amit-code99 <ArrowRight size={14} className="ml-2 -rotate-45 opacity-50" />
               </a>
             </div>
@@ -124,8 +124,8 @@ const Contact = () => {
 
             {status === 'success' ? (
               <div className="flex flex-col items-center justify-center py-16 text-center">
-                <div className="w-20 h-20 bg-[#00FF66]/10 border border-[#00FF66]/30 rounded-full flex items-center justify-center mb-6">
-                  <CheckCircle size={40} className="text-[#00FF66]" />
+                <div className="w-20 h-20 bg-[#34d399]/10 border border-[#34d399]/30 rounded-full flex items-center justify-center mb-6">
+                  <CheckCircle size={40} className="text-[#34d399]" />
                 </div>
                 <h3 className="text-[28px] font-bold text-white mb-3">Message Sent!</h3>
                 <p className="text-white/60 text-[14px] max-w-[300px] mb-8">
@@ -149,33 +149,33 @@ const Contact = () => {
               </div>
             ) : (
               <>
-                <div className="font-mono text-[10px] tracking-[0.2em] text-[#00FF66] uppercase mb-4">
+                <div className="font-mono text-[10px] tracking-[0.2em] text-[#34d399] uppercase mb-4">
                   SEND A MESSAGE
                 </div>
                 <h2 className="text-[28px] md:text-[32px] font-bold tracking-tight mb-10">
-                  Tell me about your <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#00FF66]">project.</span>
+                  Tell me about your <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399]">project.</span>
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col space-y-2">
                       <label className="font-mono text-[9px] tracking-[0.1em] text-white/50 uppercase" htmlFor="contact-name">
-                        Full Name <span className="text-[#00FF66]">*</span>
+                        Full Name <span className="text-[#34d399]">*</span>
                       </label>
                       <input
                         type="text" id="contact-name" name="name" value={formData.name} onChange={handleChange} required
-                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#00FF66]/50 transition-colors placeholder-white/30"
+                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#34d399]/50 transition-colors placeholder-white/30"
                         placeholder="Amit Yadav"
                         disabled={status === 'loading'}
                       />
                     </div>
                     <div className="flex flex-col space-y-2">
                       <label className="font-mono text-[9px] tracking-[0.1em] text-white/50 uppercase" htmlFor="contact-email">
-                        Email <span className="text-[#00FF66]">*</span>
+                        Email <span className="text-[#34d399]">*</span>
                       </label>
                       <input
                         type="email" id="contact-email" name="email" value={formData.email} onChange={handleChange} required
-                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#00FF66]/50 transition-colors placeholder-white/30"
+                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#34d399]/50 transition-colors placeholder-white/30"
                         placeholder="you@company.com"
                         disabled={status === 'loading'}
                       />
@@ -189,18 +189,18 @@ const Contact = () => {
                       </label>
                       <input
                         type="tel" id="contact-phone" name="phone" value={formData.phone} onChange={handleChange}
-                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#00FF66]/50 transition-colors placeholder-white/30"
+                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#34d399]/50 transition-colors placeholder-white/30"
                         placeholder="+91 1234567890"
                         disabled={status === 'loading'}
                       />
                     </div>
                     <div className="flex flex-col space-y-2">
                       <label className="font-mono text-[9px] tracking-[0.1em] text-white/50 uppercase" htmlFor="contact-subject">
-                        Subject <span className="text-[#00FF66]">*</span>
+                        Subject <span className="text-[#34d399]">*</span>
                       </label>
                       <input
                         type="text" id="contact-subject" name="subject" value={formData.subject} onChange={handleChange} required
-                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#00FF66]/50 transition-colors placeholder-white/30"
+                        className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#34d399]/50 transition-colors placeholder-white/30"
                         placeholder="Project inquiry"
                         disabled={status === 'loading'}
                       />
@@ -209,11 +209,11 @@ const Contact = () => {
 
                   <div className="flex flex-col space-y-2">
                     <label className="font-mono text-[9px] tracking-[0.1em] text-white/50 uppercase" htmlFor="contact-message">
-                      Message <span className="text-[#00FF66]">*</span>
+                      Message <span className="text-[#34d399]">*</span>
                     </label>
                     <textarea
                       id="contact-message" name="message" rows="5" value={formData.message} onChange={handleChange} required
-                      className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#00FF66]/50 transition-colors placeholder-white/30 resize-none"
+                      className="bg-[#1a1b1b] border border-white/5 text-white text-[14px] px-4 py-3 rounded-sm focus:outline-none focus:border-[#34d399]/50 transition-colors placeholder-white/30 resize-none"
                       placeholder="Hi Amit, I'd like to talk about..."
                       disabled={status === 'loading'}
                     ></textarea>
@@ -224,7 +224,7 @@ const Contact = () => {
                     disabled={status === 'loading'}
                     className="w-full bg-[#1a1b1b] hover:bg-[#202222] transition-all duration-300 hover:scale-[1.02] border border-white/5 rounded-sm py-4 flex items-center justify-center group overflow-hidden relative mt-4 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                   >
-                    <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#00FF66] shadow-[0_0_12px_rgba(0,255,102,0.8)]"></div>
+                    <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#34d399] shadow-[0_0_12px_rgba(52,211,153,0.8)]"></div>
                     {status === 'loading' ? (
                       <span className="flex items-center text-[13px] font-medium text-white tracking-wide">
                         <Loader2 size={16} className="animate-spin mr-2" /> Sending...

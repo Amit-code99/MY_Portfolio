@@ -35,7 +35,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <NavLink to="/" className="flex items-center group">
-          <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#00FF66] group-hover:scale-105 transition-transform">
+          <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#34d399] group-hover:scale-105 transition-transform">
             <path d="M24 10L10 24L24 38L38 24L24 10Z" fill="currentColor"/>
             <path d="M24 18L18 24L24 30L30 24L24 18Z" fill="#090a0a"/>
           </svg>
@@ -58,7 +58,7 @@ const Navbar = () => {
           className="relative bg-[#1a1a1a] hover:bg-[#252525] transition-colors border border-white/10 rounded-sm px-2.5 sm:px-4 py-2 flex items-center group overflow-hidden"
         >
            {/* Green subtle glow line on left */}
-           <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#00FF66] shadow-[0_0_8px_rgba(0,255,102,0.8)]"></div>
+           <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#34d399] shadow-[0_0_8px_rgba(52,211,153,0.8)]"></div>
            <span className="text-[11px] sm:text-[12px] md:text-[13px] font-medium text-white tracking-wide z-10 group-hover:pr-1 transition-all">
              Start <span className="hidden sm:inline">a project</span> &rarr;
            </span>
@@ -83,7 +83,7 @@ const Navbar = () => {
                   to={item.to}
                   className={({ isActive }) =>
                     `text-2xl font-bold tracking-widest transition-colors ${
-                      isActive ? 'text-[#00FF66]' : 'text-white hover:text-[#00FF66]'
+                      isActive ? 'text-[#34d399]' : 'text-white hover:text-[#34d399]'
                     }`
                   }
                   onClick={() => setIsOpen(false)}
@@ -93,7 +93,7 @@ const Navbar = () => {
               ) : (
                 <button
                   onClick={() => handleScrollLink(item.sectionId)}
-                  className="text-2xl font-bold tracking-widest transition-colors text-white hover:text-[#00FF66]"
+                  className="text-2xl font-bold tracking-widest transition-colors text-white hover:text-[#34d399]"
                 >
                   {item.name}
                 </button>

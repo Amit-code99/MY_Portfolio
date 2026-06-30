@@ -76,14 +76,14 @@ const WorkDetail = () => {
       <div className="px-4 md:px-8 max-w-[900px] mx-auto w-full">
         
         {/* Back link */}
-        <Link to="/works" className="inline-flex items-center text-white/50 hover:text-[#00FF66] transition-colors text-[13px] font-mono tracking-wide mb-12 group">
+        <Link to="/works" className="inline-flex items-center text-white/50 hover:text-[#34d399] transition-colors text-[13px] font-mono tracking-wide mb-12 group">
           <ArrowLeft size={14} className="mr-2 group-hover:-translate-x-1 transition-transform" />
           BACK TO PORTFOLIO
         </Link>
 
         {/* Eyebrow */}
         <div className="flex items-center space-x-3 mb-6">
-          <span className="font-mono text-[10px] tracking-[0.2em] text-[#00FF66] uppercase">
+          <span className="font-mono text-[10px] tracking-[0.2em] text-[#34d399] uppercase">
             [{id}] CASE STUDY
           </span>
         </div>
@@ -95,7 +95,7 @@ const WorkDetail = () => {
 
         {/* Meta */}
         <div className="flex flex-wrap items-center gap-4 mb-10">
-          <span className="bg-[#00FF66]/10 border border-[#00FF66]/30 text-[#00FF66] font-bold text-[13px] px-4 py-1.5 rounded-sm">
+          <span className="bg-[#34d399]/10 border border-[#34d399]/30 text-[#34d399] font-bold text-[13px] px-4 py-1.5 rounded-sm">
             {project.year}
           </span>
           <span className="text-white/60 text-[15px]">{project.tags}</span>
@@ -133,10 +133,10 @@ const WorkDetail = () => {
 
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-2 h-2 bg-[#00FF66] rounded-full"></div>
+              <div className="w-2 h-2 bg-[#34d399] rounded-full"></div>
               <h2 className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase">The Solution</h2>
             </div>
-            <p className="text-white/80 text-[16px] leading-relaxed pl-5 border-l-2 border-[#00FF66]/30">
+            <p className="text-white/80 text-[16px] leading-relaxed pl-5 border-l-2 border-[#34d399]/30">
               {project.solution}
             </p>
           </div>
@@ -155,13 +155,13 @@ const WorkDetail = () => {
         {/* Navigation */}
         <div className="flex items-center justify-between pt-8 border-t border-white/10">
           {prevId ? (
-            <Link to={`/works/${prevId}`} className="flex items-center text-white/50 hover:text-[#00FF66] transition-colors text-[13px] font-mono tracking-wide group">
+            <Link to={`/works/${prevId}`} className="flex items-center text-white/50 hover:text-[#34d399] transition-colors text-[13px] font-mono tracking-wide group">
               <ArrowLeft size={14} className="mr-2 group-hover:-translate-x-1 transition-transform" />
               PREVIOUS
             </Link>
           ) : <div />}
           {nextId ? (
-            <Link to={`/works/${nextId}`} className="flex items-center text-white/50 hover:text-[#00FF66] transition-colors text-[13px] font-mono tracking-wide group">
+            <Link to={`/works/${nextId}`} className="flex items-center text-white/50 hover:text-[#34d399] transition-colors text-[13px] font-mono tracking-wide group">
               NEXT
               <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>

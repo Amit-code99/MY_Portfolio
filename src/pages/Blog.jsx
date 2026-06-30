@@ -50,7 +50,7 @@ const Blog = () => {
             </span>
           </div>
           <h1 className="text-[46px] md:text-[60px] font-bold tracking-tight leading-[1] mb-4">
-            <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#00FF66]">Insights</span> & Articles
+            <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399]">Insights</span> & Articles
           </h1>
           <p className="text-white/60 text-[15px] max-w-[500px] leading-relaxed">
             Thoughts on backend engineering, system design, and building production-grade applications.
@@ -64,13 +64,13 @@ const Blog = () => {
               
               {/* Date & Categories */}
               <div className="flex items-center space-x-4 mb-4">
-                <span className="font-mono text-[10px] tracking-[0.1em] text-[#00FF66] uppercase font-bold">{post.date}</span>
+                <span className="font-mono text-[10px] tracking-[0.1em] text-[#34d399] uppercase font-bold">{post.date}</span>
                 <span className="w-[3px] h-[3px] bg-white/20 rounded-full"></span>
                 <span className="font-mono text-[10px] tracking-[0.1em] text-white/40 uppercase">{post.categories}</span>
               </div>
 
               {/* Title */}
-              <h2 className="text-[24px] md:text-[30px] font-bold tracking-tight leading-[1.15] mb-4 group-hover:text-[#00FF66] transition-colors">
+              <h2 className="text-[24px] md:text-[30px] font-bold tracking-tight leading-[1.15] mb-4 group-hover:text-[#34d399] transition-colors">
                 {post.title}
               </h2>
 
@@ -88,7 +88,7 @@ const Blog = () => {
                     </span>
                   ))}
                 </div>
-                <ArrowRight size={16} className="text-white/20 group-hover:text-[#00FF66] group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
+                <ArrowRight size={16} className="text-white/20 group-hover:text-[#34d399] group-hover:translate-x-1 transition-all flex-shrink-0 ml-4" />
               </div>
 
             </article>

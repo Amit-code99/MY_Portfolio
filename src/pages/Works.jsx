@@ -66,21 +66,21 @@ const Works = () => {
 
   return (
     <div className="w-full bg-[#090a0a] text-white min-h-screen pt-24 pb-0">
-      
+
       {/* Hero Section */}
       <section className="relative w-full max-w-[1500px] mx-auto px-4 md:px-8 lg:px-12 pt-16 pb-16 overflow-hidden border-b border-white/5">
-        
+
         {/* Abstract Background Image */}
         <div className="absolute top-0 right-0 w-full lg:w-[60%] h-full opacity-40 lg:opacity-70 pointer-events-none" style={{
-            backgroundImage: `url(${worksHeroBg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'right center',
-            maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
-            WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)'
+          backgroundImage: `url(${worksHeroBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'right center',
+          maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
+          WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)'
         }}></div>
 
         <div className="relative z-10 max-w-3xl">
-          
+
           {/* Eyebrow */}
           <div className="flex items-center space-x-3 mb-10">
             <span className="font-mono text-[10px] tracking-[0.2em] text-white/40 uppercase">
@@ -91,7 +91,7 @@ const Works = () => {
           {/* Heading */}
           <h1 className="text-[36px] md:text-[50px] lg:text-[46px] font-bold tracking-tight leading-[1.1] mb-8 flex flex-col">
             <span>Proven work.</span>
-            <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#00FF66] mt-2">
+            <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399] mt-2">
               Real business impact.
             </span>
           </h1>
@@ -126,10 +126,10 @@ const Works = () => {
 
       {/* Grid Section */}
       <section className="w-full max-w-[1500px] mx-auto px-4 md:px-8 lg:px-12 pt-12">
-        
+
         {/* Eyebrow */}
         <div className="flex items-center space-x-3 mb-12">
-          <span className="font-mono text-[10px] tracking-[0.2em] text-[#00FF66] uppercase">
+          <span className="font-mono text-[10px] tracking-[0.2em] text-[#34d399] uppercase">
             [01] ALL CASES
           </span>
         </div>
@@ -138,15 +138,15 @@ const Works = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {projects.map((project) => (
             <Link to={`/works/${project.id}`} key={project.id} className="group flex flex-col cursor-pointer">
-              
+
               {/* Image Container */}
               <div className="relative w-full aspect-[4/3] rounded-sm overflow-hidden mb-6 bg-[#111212] border border-white/5">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-[#00FF66]/0 group-hover:bg-[#00FF66]/5 transition-colors duration-500 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[#34d399]/0 group-hover:bg-[#34d399]/5 transition-colors duration-500 pointer-events-none"></div>
               </div>
 
               {/* Card Footer Details */}
@@ -154,9 +154,9 @@ const Works = () => {
                 <div className="flex items-start justify-between w-full mb-3">
                   <div className="flex flex-col">
                     <div className="flex items-center space-x-3 mb-2">
-                      <span className="font-mono text-[10px] tracking-[0.1em] text-[#00FF66]">{project.id}</span>
+                      <span className="font-mono text-[10px] tracking-[0.1em] text-[#34d399]">{project.id}</span>
                     </div>
-                    <h3 className="text-[22px] md:text-[28px] font-bold tracking-tight group-hover:text-[#00FF66] transition-colors duration-300">
+                    <h3 className="text-[22px] md:text-[28px] font-bold tracking-tight group-hover:text-[#34d399] transition-colors duration-300">
                       {project.title}
                     </h3>
                     <span className="font-mono text-[9px] tracking-[0.2em] text-white/40 uppercase mt-2">
@@ -191,19 +191,19 @@ const Works = () => {
       <section className="w-full max-w-[1500px] mx-auto px-4 md:px-8 lg:px-12 pt-16 pb-16 border-b border-white/5">
         <div className="max-w-2xl">
           <h2 className="text-[32px] md:text-[40px] lg:text-[50px] font-bold tracking-tight leading-[1.1] mb-6">
-            Ready for your own <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#00FF66]">project?</span>
+            Ready for your own <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399]">project?</span>
           </h2>
           <p className="text-white/70 text-[15px] md:text-[16px] leading-relaxed mb-10 max-w-lg">
             I take on a limited number of projects per quarter. Send me a brief — I'll reply within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button 
+            <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#00FF66] text-[#090a0a] hover:bg-[#33ff85] transition-all duration-300 hover:scale-105 font-bold text-[13px] px-8 py-4 rounded-sm flex items-center justify-center"
+              className="bg-[#34d399] text-[#090a0a] hover:bg-[#6ee7b7] transition-all duration-300 hover:scale-105 font-bold text-[13px] px-8 py-4 rounded-sm flex items-center justify-center"
             >
               Start a project →
             </button>
-            <a 
+            <a
               href="https://wa.me/918948869211?text=Hi%20Amit%2C%20I%27d%20like%20to%20discuss%20a%20project"
               target="_blank"
               rel="noopener noreferrer"
