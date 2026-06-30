@@ -37,7 +37,7 @@ const Footer = () => {
                   AKY
                 </text>
               </svg>
-              <span className="text-white font-bold tracking-wide text-lg">AKY Technologies</span>
+              <span className="text-white font-bold tracking-wide text-lg">AKY Tech Solutions</span>
             </div>
             <h3 className="text-[18px] md:text-[20px] font-medium leading-[1.4] text-white/80 max-w-sm">
               Building scalable web apps <br />
@@ -118,7 +118,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-white/5 font-mono text-[9px] tracking-[0.2em] text-white/30 uppercase">
-          <span>&copy; 2026 AKY Technologies. All rights reserved.</span>
+          <span>&copy; 2026 AKY Tech Solutions. All rights reserved.</span>
           <span className="mt-4 sm:mt-0">BUILT BY AKY.</span>
         </div>
 

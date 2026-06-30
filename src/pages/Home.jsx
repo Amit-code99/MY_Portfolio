@@ -453,7 +453,7 @@ const Home = () => {
             {/* Engineer Cutout */}
             <img
               src={profileAsset}
-              alt="AKY Technologies"
+              alt="AKY Tech Solutions"
               className="w-full h-full object-cover relative z-10 transition-all duration-700 mix-blend-lighten"
               style={{
                 maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%)',
@@ -475,8 +475,8 @@ const Home = () => {
 
             {/* Heading */}
             <h2 className="text-[28px] md:text-[38px] lg:text-[46px] font-bold tracking-tight leading-[1.0] mb-8">
-              AKY <br />
-              <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399]">Technologies.</span>
+              AKY Tech <br />
+              <span className="font-serif tracking-[-0.025em] px-[0.04em] italic font-normal text-[#34d399]">Solutions.</span>
             </h2>
 
             {/* Tags */}
